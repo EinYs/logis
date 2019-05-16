@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "logis": "^1.0.1"
+    "logis": "^1.0.2"
   }
 }

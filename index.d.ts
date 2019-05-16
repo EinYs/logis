@@ -1,1 +1,1 @@
-export default function log(errorMsg: string, enableConsoleLog?: boolean): string;
+export default function log(message: any, enableConsoleLog?: boolean): string;

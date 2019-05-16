@@ -1,3 +1,3 @@
-const logis = require('logis').default
+const logis = require('../index').default
 
-logis('apple')
+logis([{apple: 'delicious'}])

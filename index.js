@@ -5,10 +5,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @param errorMsg discribes error
  */
 const path = require('path');
-function log(errorMsg, enableConsoleLog = true) {
+function log(message, enableConsoleLog = true) {
+    if (typeof message === 'object')
+        message = JSON.stringify(message);
+    if (typeof message !== 'string')
+        message = message.toString();
     const filename = `[${path.basename(__filename)}] `;
     if (enableConsoleLog)
-        console.log(filename + errorMsg);
-    return filename + errorMsg;
+        console.log(filename + message);
+    return filename + message;
 }
 exports.default = log;
