@@ -5,7 +5,7 @@
 const path = require('path');
 export default function log(message: any, enableConsoleLog:boolean = true) {
     if(typeof message ==='object')
-        message = JSON.stringify(message)
+        message = JSON.stringify(message, null, 2)
     if(typeof message !== 'string')
         message = message.toString()
 
