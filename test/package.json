@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "logis": "^1.0.3"
+    "logis": "^1.0.3",
+    "loz": "^1.0.0"
   }
 }
